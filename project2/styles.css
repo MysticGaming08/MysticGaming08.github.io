@@ -1,0 +1,67 @@
+*{
+	background-color: #E5D9B8; /* Sandstone background */
+	color: #4A3C2A; /* Dark brown text */
+	font-family: "Papyrus", "serif"; /* Ancient Egyptian-style font */
+}
+
+h1{
+	font-size: 2.5em;
+	color: #C89D2D; /* Golden accents for headers */
+	border-bottom: 3px solid #C89D2D;
+	text-align: center;
+}
+
+h2{
+	font-size: 2em;
+	color: #B08D57; /* Muted golden brown */
+	border-bottom: 2px solid #B08D57;
+	text-align: center;
+}
+
+p{
+	font-size: 1.8em;
+	line-height: 1.6;
+	margin: 15px;
+	color: #4A3C2A; /* Consistent dark brown for paragraph text */
+}
+
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+table{
+	width: 85%;
+	border: 5px solid #8B5E3C; /* Rich brown table border */
+	background-color: #F7E6CE; /* Light parchment color */
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.3); /* Soft shadow for depth */
+}
+
+img{
+	height: 200px;
+	width: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border: 3px solid #C89D2D; /* Gold border around images */
+	border-radius: 10px; /* Slight rounding for softer appearance */
+}
+
+td{
+	border: 3px solid #8B5E3C; /* Matching brown for table cells */
+	width: 42.5%;
+	height: 300px;
+	background-color: #EFE0C0; /* Light sand color for table cells */
+	text-align: center;
+	padding: 10px;
+}
+
+.titlePane{
+	border-bottom: 3px solid #C89D2D; /* Gold-inspired color for headers */
+	padding: 10px;
+	font-weight: bold;
+	background-color: #D4B67A; /* Muted gold for titles */
+	text-align: center;
+}

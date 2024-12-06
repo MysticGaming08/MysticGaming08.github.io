@@ -1,0 +1,151 @@
+<!--
+names: Morgan Harris & Dylan Zelasko
+WEBT 2300: Lab 05
+filename: index.html
+
+purpose: landing page + API call container
+uses: https://metmuseum.github.io/, */main.js -> local
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metropolitan Museum of Art -</title>
+
+<!-- Initialize JQuery -->
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!--initialize stylesheet-->
+
+    <link rel="stylesheet" href="styles.css">
+
+<!--Initialize main.js-->
+
+	<script src="main.js">Egyptian Art Display</script>
+
+<!--Set all values from API-->
+<script type="text/javascript">
+        $(document).ready(function(){
+            callApi(); 
+        });
+</script>
+
+</head>
+
+<!--Start body-->
+<body>
+	<h1 class="center">- Metropolitan Museum of Art -</h1>
+	<hr>
+	<h2 class="center">Egyptian Art</h2>
+	<hr>
+	<br>
+	<table class="center">
+		<tr>
+			<td>
+				<p id="exn1" class="titlePane">Exhibit 1</p>
+				<br>
+				<p id="exd1">Description</p>
+			</td>
+			<td>
+				<img id = "ex1">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn2" class="titlePane">Exhibit 2</p>
+				<br>
+				<p id="exd2">Description</p>
+			</td>
+			<td>
+				<img id = "ex2">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn3" class="titlePane">Exhibit 3</p>
+				<br>
+				<p id="exd3">Description</p>
+			</td>
+			<td>
+				<img  id = "ex3">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn4" class="titlePane">Exhibit 4</p>
+				<br>
+				<p id="exd4">Description</p>
+			</td>
+			<td>
+				<img id = "ex4">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn5" class="titlePane">Exhibit 5</p>
+				<br>
+				<p id="exd5">Description</p>
+			</td>
+			<td>
+				<img id = "ex5">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn6" class="titlePane">Exhibit 6</p>
+				<br>
+				<p id="exd6">Description</p>
+			</td>
+			<td>
+				<img id = "ex6">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn7" class="titlePane">Exhibit 7</p>
+				<br>
+				<p id="exd7">Description</p>
+			</td>
+			<td>
+				<img id = "ex7">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn8" class="titlePane">Exhibit 8</p>
+				<br>
+				<p id="exd8">Description</p>
+			</td>
+			<td>
+				<img id = "ex8">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn9" class="titlePane">Exhibit 9</p>
+				<br>
+				<p id="exd9">Description</p>
+			</td>
+			<td>
+				<img id = "ex9">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p id ="exn10" class="titlePane">Exhibit 10</p>
+				<br>
+				<p id="exd10">Description</p>
+			</td>
+			<td>
+				<img id = "ex10">
+			</td>
+		</tr>
+	</table>
+
+	<footer class = "center">Dylan Zelasko and Morgan Harris</footer>
+
+</body> 
+
+<!--end-->

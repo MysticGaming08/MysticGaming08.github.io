@@ -1,0 +1,149 @@
+/* From ChatGBT */
+/* General Styles */
+body {
+  padding-top: 10px;
+  font-family: 'Arial', sans-serif;
+  background-color: #fff8e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  position: relative;
+  background-color: #fff8e7; /* Add a solid background color */
+  cursor: url('58aeffd6c869e092af51ee76.png'), auto; /* Pawprint cursor */
+}
+
+/* Paw Print Decoration for the Sides - Vertical Only */
+
+.paw-prints-left,
+.paw-prints-right {
+  position: fixed;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  background-image: url('https://garden.spoonflower.com/c/10754926/p/f/m/jZfrOK1ZSJARvscQSSIGicxWTCx0PM11SCLPwRr_PnUt0jNsJQ5WuRg/Dog%20Paws%20Brown%20Small%20Print.jpg');
+  background-repeat: repeat-y;
+  opacity: 0.5;
+  animation: pawPrintMove 1.5s infinite ease-in-out; /* Applying the new animation */
+
+}
+
+
+.paw-prints-left {
+
+  left: 0;
+
+}
+
+
+.paw-prints-right {
+
+  right: 0;
+
+}
+
+
+/* Container */
+
+.container {
+
+  width: 100%;
+  max-width: 600px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #f2c94c;
+  position: relative;
+  z-index: 1; /* Ensures the container is above the paw prints */
+
+}
+/* Button Styles - Dog Bone Style */
+button {
+  padding: 12px 35px; /* Adjusted padding for a more prominent button */
+  background-color: #f39c12;
+  color: white;
+  border: none;
+  border-radius: 20px;  /* Rounded for a dog-bone effect */
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  position: relative;
+  z-index: 2; /* Ensure button appears above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Add shadow for depth */
+  display: inline-block;
+  text-align: center;
+}
+
+/* Hover effect for the button */
+button:hover {
+  background-color: #f1c40f;
+  transform: scale(1.1) rotate(2deg); /* Adds a slight rotation and scaling for fun */
+}
+
+/* Add a subtle shake animation when hovered for playful effect */
+button:active {
+  animation: shake 0.3s ease-in-out;
+}
+
+/* Keyframes for the shake animation */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}
+
+/* Input Styles */
+input {
+  padding: 10px;
+  width: 60%;
+  margin-top: 10px;
+  border: 2px solid #f39c12;
+  border-radius: 10px;
+  background-color: #fff8e7;
+  cursor: url('https://example.com/paw-cursor.png'), auto; /* Custom dog paw cursor */
+}
+
+/* Image Styles */
+.image img {
+  max-width: 50%;
+  border-radius: 10px;
+  border: 2px solid #f39c12;
+  margin-top: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Fact and Breed Info Box Styles */
+.fact, .breed-info {
+  background-color: #fceabb;
+  padding: 15px;
+  margin-top: 10px;
+  border-radius: 10px;
+  min-height: 60px;
+  font-size: 1.1em;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer Styles */
+footer {
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #7f8c8d;
+}
+
+footer a {
+  color: #d35400;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
