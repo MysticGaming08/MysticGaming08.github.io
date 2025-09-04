@@ -1,0 +1,270 @@
+/* Body base styles carried over from your previous stylesheet */
+body {
+  background: #181c24;
+  color: #ADD8E6;
+  font-family: 'papyrus';
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e2230;
+  padding: 1em 2em;
+  box-shadow: 0 2px 4px #0007;
+  flex-shrink: 0;
+}
+
+/*The Title*/
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  color: #ADD8E6;
+}
+
+/*Navigatiion Bar*/
+
+nav a {
+  color: #aeb2cc;
+  margin-left: 2em;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+nav a:hover {
+  color: #ADD8E6;
+}
+
+/* Main container */
+main {
+  flex-grow: 1;
+  padding: 2em;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer styling */
+
+footer {
+  background: #1e2230;
+  color: #aeb2cc;
+  text-align: center;
+  padding: 1em 0;
+  font-size: 0.95em;
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.socials a {
+  color: #ADD8E6;
+  margin: 0 0.5em;
+  text-decoration: none;
+}
+
+/* Section headings */
+.adventure  {
+  color: #ADD8E6;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.games-list h1, .games-upcoming h2 {
+  color: #ADD8E6;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+/* Button style consistent with previous */
+.button {
+    display: inline-block;
+    background: linear-gradient(90deg, #ADD8E6, #CBC3E3);
+    color: #181c24;
+     padding: 1em 2.5em;
+    border-radius: 3em;
+    font-size: 1.1em;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-decoration: none;
+    max-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+/* Games gallery container */
+.games-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Games card */
+.games-card{
+    background:#24283b;
+    width: 200px;
+    height: auto;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    border-radius: 1em;
+    box-sizing: border-box;
+}
+
+
+/* Game card image */
+.games-card img {
+  width: 160px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1em;
+  margin-bottom: 1em;
+  display: block;
+}
+
+/* Game title */
+.games-card h3 {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #ADD8E6;
+  margin: 0.5em 0 0.3em;
+}
+
+/* Deals list and cards */
+
+.deals {
+    text-align: center;
+    margin-bottom: 2em;
+    font-size: 1.3em;
+    color: #ADD8E6;
+    font-weight: 600;
+    list-style: none;
+    padding: 0;
+    background: #2a2f4a;
+    margin: 0.8em 0;
+    border-radius: 0.3em;
+  
+}
+
+.deals-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.deals-card {
+  background: #24283b;
+  border-radius: 1em;
+  box-shadow: 0 3px 15px #0009;
+  width: 280px;
+  height: 100%;
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers content horizontally */
+  justify-content: flex-start;
+  text-align: center;    /* makes inner text center-aligned */
+  transition: transform 0.3s ease;
+}
+
+.deals-card:hover {
+  transform: scale(1.05);
+}
+
+.deals-card img {
+  width: 100%;
+  max-width: 240px; /* same max width as before */
+  height: 180px; /* fixed height for consistent card size */
+  object-fit: cover; /* crop excess parts but keep aspect ratio */
+  border-radius: 0.8em; /* keeps same rounding for all */
+  display: block; /* remove inline image space */
+  margin-bottom: 1em; /* consistent spacing below image */
+}
+
+.deals-info h2 {
+  margin: 0.2em 0 0.3em;
+  color: #FFFFFF;
+}
+
+.deals-info p {
+  margin: 0.3em 0;
+  color: #ff9cee;
+  font-weight: 600;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #666a86;
+  margin-left: 0.5em;
+  font-weight: 400;
+}
+
+/* Wireframe styling for careers/contact */
+
+.wf-box {
+  background: #22273e;
+  border-radius: 0.8em;
+  box-shadow: inset 0 0 10px #000a;
+  padding: 2em;
+  color: #7a7f9f;
+  font-style: italic;
+  font-weight: 700;
+  text-align: center;
+  margin: 1em 0;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wf-header h1, .wf-header h2 {
+  color: #ADD8E6;
+}
+
+/* Team gallery */
+
+.team-gallery {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.member-card {
+  background: #2a2f4a;
+  border-radius: 1em;
+  padding: 1em;
+  width: 180px;
+  box-shadow: 0 3px 15px #0007;
+  text-align: center;
+  color: #ffd900;
+}
+
+.member-card img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5em;
+}
+
+.member-card h3 {
+  margin: 0.3em 0 0.1em;
+  font-weight: 900;
+}
+
+.member-card span {
+  font-weight: 600;
+  color: #e2c030;
+  font-style: normal;
+}
