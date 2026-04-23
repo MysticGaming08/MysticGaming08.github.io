@@ -63,12 +63,34 @@ nav a {
     padding: 1rem 1.25rem;
     border-radius: 12px;
     font-weight: 600;
-    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
+    transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+}
 
-    @media (max-width: 600px) {
+nav a:hover,
+nav a:focus {
+    background: #cfe0ff;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.18);
+    outline: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header {
+        padding: 4rem 1rem 3rem;
+    }
+
+    main {
+        margin-top: -1.5rem;
+        padding: 0 1rem;
+    }
+
+    nav[aria-label="Project navigation"] {
+        padding: 1rem;
+    }
+
     nav ul {
         grid-template-columns: 1fr;
     }
 }
-
