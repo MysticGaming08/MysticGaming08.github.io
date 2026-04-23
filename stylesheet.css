@@ -65,4 +65,10 @@ nav a {
     font-weight: 600;
     transition: transform 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
     text-align: center;
+
+    @media (max-width: 600px) {
+    nav ul {
+        grid-template-columns: 1fr;
+    }
 }
+
